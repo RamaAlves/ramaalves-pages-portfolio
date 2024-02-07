@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   align-items: center;
 }
-.hero__contianer_info {
+.hero__container_info {
   padding-top: 10rem;
   display: flex;
   align-self: flex-start;
@@ -163,9 +163,9 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 .about_me {
-  background-color: var(--black-transparent);
+  background-color: var(--blue);
 }
-.proyects {
+.projects {
   height: calc(100vh - 60px);
 }
 .section_description {
