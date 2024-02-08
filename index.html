@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="thin_scroll">
     <header class="header">
       <nav class="nav">
-        <h2 class="nav__title">Informatorio</h2>
+        <a href="#hero" class="nav__a"
+          ><h2 class="nav__title">Informatorio</h2>
+        </a>
         <ul class="anchors">
           <li class="anchors__li">
             <a class="anchors__a" href="#hero">Inicio</a>
@@ -31,16 +33,17 @@
     </header>
     <main class="main">
       <section class="hero" id="hero">
-        <div class="hero__container_info">
-          <h1 class="hero__title">Web developer</h1>
-          <p class="hero__paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            dolorem quasi atque deserunt odio, minima saepe delectus nemo
-            praesentium sapiente labore excepturi quos repellat non, officiis,
-            ea vero commodi reiciendis.
-          </p>
+        <h1 class="hero__title">Soy Desarrollador</h1>
+        <p class="hero__paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <div class="hero__container_buttons">
+          <a href="#about-me" class="button">Sobre mí</a>
+          <a href="cv" target="_blank" class="button button_dark"
+            >Descargar CV</a
+          >
         </div>
-        <div class="hero__container_img">
+        <!-- <div class="hero__container_img">
           <span class="hero__container_img__bg"></span>
           <span class="hero__container_img__bg"></span>
           <img
@@ -48,207 +51,233 @@
             src="./assets/images/profile/mascota.svg"
             alt="foto de perfil"
           />
-        </div>
+        </div> -->
       </section>
       <article class="article about_me" id="about-me">
-        <h2 class="article__title">Un poco sobre mi</h2>
-        <section class="section_description">
-          <img
-            class="section_description__img profile_image"
-            src="./assets/images/profile/mascota.svg"
-            alt="imagen sobre mi"
-          />
-          <div class="section_description__info thin_scroll">
-            <h3 class="section_description__title">Mi historia</h3>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis.
-            </p>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis.
-            </p>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis.
-            </p>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Molestiae dolorem quasi atque
-              deserunt odio, minima saepe delectus nemo praesentium sapiente
-              labore excepturi quos repellat non, officiis, ea vero commodi
-              reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Molestiae dolorem quasi atque deserunt odio, minima saepe
-              delectus nemo praesentium sapiente labore excepturi quos repellat
-              non, officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-              deserunt odio, minima saepe delectus nemo praesentium sapiente
-              labore excepturi quos repellat non, officiis, ea vero commodi
-              reiciendis.
-            </p>
-          </div>
-        </section>
-        <section class="section_description">
-          <div class="section_description__info thin_scroll">
-            <h3 class="section_description__title">Mis hobbies</h3>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis.
-            </p>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Molestiae dolorem quasi atque
-              deserunt odio, minima saepe delectus nemo praesentium sapiente
-              labore excepturi quos repellat non, officiis, ea vero commodi
-              reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Molestiae dolorem quasi atque deserunt odio, minima saepe
-              delectus nemo praesentium sapiente labore excepturi quos repellat
-              non, officiis, ea vero commodi reiciendis.
-            </p>
-            <p class="section_description__paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae dolorem quasi atque deserunt odio, minima saepe delectus
-              nemo praesentium sapiente labore excepturi quos repellat non,
-              officiis, ea vero commodi reiciendis.
-            </p>
-          </div>
-          <img
-            class="section_description__img profile_image"
-            src="./assets/images/profile/mascota.svg"
-            alt="imagen sobre mi"
-          />
-        </section>
+        <div class="bg_animate" aria-hidden="true">
+          <!-- <span class="bg_animate__sapn"></span>
+          <span class="bg_animate__sapn"></span>
+          <span class="bg_animate__sapn"></span>
+          <span class="bg_animate__sapn"></span>
+          <span class="bg_animate__sapn"></span> -->
+        </div>
+        <div class="article__content position__abs">
+          <h2 class="article__title">Un poco sobre mi</h2>
+          <section class="section_description">
+            <div class="section_description__portaretrato">
+              <img
+                class="section_description__img"
+                src="./assets/images/profile/portada.jpg"
+                alt="imagen sobre mi"
+              />
+            </div>
+            <div class="section_description__info thin_scroll thin_scroll_grey">
+              <h3 class="section_description__title">Mi historia</h3>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
+                quasi atque deserunt odio, minima saepe delectus nemo
+                praesentium sapiente labore excepturi quos repellat non,
+                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
+                deserunt odio, minima saepe delectus nemo praesentium sapiente
+                labore excepturi quos repellat non, officiis, ea vero commodi
+                reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>
+            </div>
+          </section>
+          <section class="section_description">
+            <div
+              class="section_description__info thin_scroll section_description__info__bgt"
+            >
+              <h3 class="section_description__title">Mis hobbies</h3>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
+                quasi atque deserunt odio, minima saepe delectus nemo
+                praesentium sapiente labore excepturi quos repellat non,
+                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
+                deserunt odio, minima saepe delectus nemo praesentium sapiente
+                labore excepturi quos repellat non, officiis, ea vero commodi
+                reiciendis.
+              </p>
+              <p class="section_description__paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae dolorem quasi atque deserunt odio, minima saepe
+                delectus nemo praesentium sapiente labore excepturi quos
+                repellat non, officiis, ea vero commodi reiciendis.
+              </p>
+            </div>
+            <div class="section_description__portaretrato">
+              <img
+                class="section_description__img"
+                src="./assets/images/profile/portada.jpg"
+                alt="imagen sobre mi"
+              />
+            </div>
+          </section>
+        </div>
       </article>
       <article class="article projects" id="projects">
-        <h2 class="article__title">Mis proyectos</h2>
-        <div class="container_cards_grid">
-          <div class="card">
-            <h3 class="card__title">titulo</h3>
-            <p class="card__paragraph thin_scroll thin_scroll_grey">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore necessitatibus doloribus adipisci dolorum cum et
-              quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-              nihil voluptates eos enim aperiam porro architecto et?
-            </p>
-            <img
-              class="card__img"
-              src="./assets/images/proyectos/calendario.jpg"
-              alt="imagen del proyecto"
-            />
-            <small class="card__small">
-              Foto de
-              <a
-                href="https://unsplash.com/es/@esteejanssens?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Estée Janssens</a
-              >
-              en
-              <a
-                href="https://unsplash.com/es/fotos/rotulador-negro-en-el-cuaderno-zni0zgb3bkQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Unsplash</a
-              >
-            </small>
-          </div>
-          <div class="card">
-            <h3 class="card__title">titulo</h3>
-            <p class="card__paragraph thin_scroll thin_scroll_grey">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore necessitatibus doloribus adipisci dolorum cum et
-              quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-              nihil voluptates eos enim aperiam porro architecto et? Lorem ipsum
-              dolor sit, amet consectetur adipisicing elit. Inventore
-              necessitatibus doloribus adipisci dolorum cum et quisquam dicta
-              veniam accusamus dignissimos. Placeat eligendi nihil voluptates
-              eos enim aperiam porro architecto et?
-            </p>
-            <img
-              class="card__img"
-              src="./assets/images/proyectos/clima.jpg"
-              alt="imagen del proyecto"
-            />
-            <small class="card__small">
-              Foto de
-              <a
-                href="https://unsplash.com/es/@sushioutlaw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Brian McGowan</a
-              >
-              en
-              <a
-                href="https://unsplash.com/es/fotos/pintura-abstracta-verde-amarilla-y-rosa-kKyxIwvljBg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Unsplash</a
-              >
-            </small>
-          </div>
-          <div class="card">
-            <h3 class="card__title">titulo</h3>
-            <p class="card__paragraph thin_scroll thin_scroll_grey">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore necessitatibus doloribus adipisci dolorum cum et
-              quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-              nihil voluptates eos enim aperiam porro architecto et?
-            </p>
-            <img
-              class="card__img"
-              src="./assets/images/proyectos/calculadora.jpg"
-              alt="imagen del proyecto"
-            />
-            <small class="card__small">
-              Foto de
-              <a
-                href="https://unsplash.com/es/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Annie Spratt</a
-              >
-              en
-              <a
-                href="https://unsplash.com/es/fotos/calculadora-casio-blanca-r_m-JKJVto0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Unsplash</a
-              >
-            </small>
-          </div>
-          <div class="card">
-            <h3 class="card__title">titulo</h3>
-            <p class="card__paragraph thin_scroll thin_scroll_grey">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Inventore necessitatibus doloribus adipisci dolorum cum et
-              quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-              nihil voluptates eos enim aperiam porro architecto et?
-            </p>
-            <img
-              class="card__img"
-              src="./assets/images/proyectos/reproductor.jpg"
-              alt="imagen del proyecto"
-            />
-            <small class="card__small">
-              Foto de
-              <a
-                href="https://unsplash.com/es/@usefulcollective?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Mildly Useful</a
-              >
-              en
-              <a
-                href="https://unsplash.com/es/fotos/iphone-x-gris-espacial-mostrando-la-aplicacion-spotify-N_xjrdKZPkw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Unsplash</a
-              >
-            </small>
+        <div class="article__content">
+          <h2 class="article__title">Mis proyectos</h2>
+          <div class="container_cards_grid">
+            <a href="#" target="_blank" class="card">
+              <img
+                class="card__img"
+                src="./assets/images/proyectos/calendario.jpg"
+                alt="imagen del proyecto"
+              />
+              <div class="card__content">
+                <h3 class="card__title">titulo</h3>
+                <span class="card__divisor"></span>
+                <p class="card__paragraph thin_scroll thin_scroll_grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Inventore necessitatibus doloribus adipisci dolorum cum et
+                  quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                  nihil voluptates eos enim aperiam porro architecto et?
+                </p>
+              </div>
+              <!-- <small class="card__small">
+                Foto de
+                <a
+                  href="https://unsplash.com/es/@esteejanssens?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Estée Janssens</a
+                >
+                en
+                <a
+                  href="https://unsplash.com/es/fotos/rotulador-negro-en-el-cuaderno-zni0zgb3bkQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Unsplash</a
+                >
+              </small> -->
+            </a>
+            <a href="#" target="_blank" class="card">
+              <img
+                class="card__img"
+                src="./assets/images/proyectos/clima.jpg"
+                alt="imagen del proyecto"
+              />
+              <div class="card__content">
+                <h3 class="card__title">titulo</h3>
+                <span class="card__divisor"></span>
+                <p class="card__paragraph thin_scroll thin_scroll_grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Inventore necessitatibus doloribus adipisci dolorum cum et
+                  quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                  nihil voluptates eos enim aperiam porro architecto et?
+                </p>
+              </div>
+              <!-- <small class="card__small">
+                Foto de
+                <a
+                  href="https://unsplash.com/es/@sushioutlaw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Brian McGowan</a
+                >
+                en
+                <a
+                  href="https://unsplash.com/es/fotos/pintura-abstracta-verde-amarilla-y-rosa-kKyxIwvljBg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Unsplash</a
+                >
+              </small> -->
+            </a>
+            <a href="#" target="_blank" class="card">
+              <img
+                class="card__img"
+                src="./assets/images/proyectos/calculadora.jpg"
+                alt="imagen del proyecto"
+              />
+              <div class="card__content">
+                <h3 class="card__title">titulo</h3>
+                <span class="card__divisor"></span>
+                <p class="card__paragraph thin_scroll thin_scroll_grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Inventore necessitatibus doloribus adipisci dolorum cum et
+                  quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                  nihil voluptates eos enim aperiam porro architecto et?
+                </p>
+              </div>
+              <!-- <small class="card__small">
+                Foto de
+                <a
+                  href="https://unsplash.com/es/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Annie Spratt</a
+                >
+                en
+                <a
+                  href="https://unsplash.com/es/fotos/calculadora-casio-blanca-r_m-JKJVto0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Unsplash</a
+                >
+              </small> -->
+            </a>
+            <a href="#" target="_blank" class="card">
+              <img
+                class="card__img"
+                src="./assets/images/proyectos/reproductor.jpg"
+                alt="imagen del proyecto"
+              />
+              <div class="card__content">
+                <h3 class="card__title">titulo</h3>
+                <span class="card__divisor"></span>
+                <p class="card__paragraph thin_scroll thin_scroll_grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Inventore necessitatibus doloribus adipisci dolorum cum et
+                  quisquam dicta veniam accusamus dignissimos. Placeat eligendi
+                  nihil voluptates eos enim aperiam porro architecto et?
+                </p>
+              </div>
+              <!-- <small class="card__small">
+                Foto de
+                <a
+                  href="https://unsplash.com/es/@usefulcollective?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Mildly Useful</a
+                >
+                en
+                <a
+                  href="https://unsplash.com/es/fotos/iphone-x-gris-espacial-mostrando-la-aplicacion-spotify-N_xjrdKZPkw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                  >Unsplash</a
+                >
+              </small> -->
+            </a>
           </div>
         </div>
       </article>
     </main>
     <footer class="footer">
-      <h4 class="footer__title">Contactame</h4>
+      <h4 class="footer__title">CONTACTAME</h4>
       <ul class="anchors">
         <li class="anchors__li">
           <a class="anchors__a" href="#" target="_blank">github</a>
