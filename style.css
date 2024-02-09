@@ -384,7 +384,7 @@ body {
 /* card */
 .container_cards_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
 }
@@ -544,6 +544,9 @@ body {
     height: max-content;
     gap: 1rem;
   }
+  .card__content .button {
+    align-self: center;
+  }
 }
 @media (max-width: 1200px) {
   .hero {
@@ -553,6 +556,9 @@ body {
   .hero__title {
     animation: none;
     color: var(--white);
+  }
+  .container_cards_grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 992px) {
