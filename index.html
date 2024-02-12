@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,71 +13,74 @@
     />
   </head>
   <body class="scroll">
-    <header class="header">
-      <nav class="nav">
-        <a href="#hero" class="nav__a">
-          <h2 class="nav__title">Informatorio</h2>
+    <header class="encabezado">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">Informatorio</h2>
         </a>
-        <ul class="anchors">
-          <li class="anchors__li">
-            <a class="anchors__a" href="#hero">Inicio</a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
           </li>
-          <li class="anchors__li">
-            <a class="anchors__a" href="#about-me">Sobre mi</a>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
           </li>
-          <li class="anchors__li">
-            <a class="anchors__a" href="#projects">Proyectos</a>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <section class="hero" id="hero">
-        <h1 class="hero__title">Soy Desarrollador</h1>
-        <p class="hero__paragraph">
+    <main class="principal">
+      <section class="presentacion" id="presentacion">
+        <h1 class="presentacion__titulo">Soy Desarrollador</h1>
+        <p class="presentacion__parrafo">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </p>
-        <div class="hero__container_buttons">
-          <a href="#about-me" class="button">Sobre mí</a>
-          <a href="cv" target="_blank" class="button button_dark"
+        <div class="presentacion__contenedor_botones">
+          <a href="#sobre-mi" class="boton">Sobre mí</a>
+          <a
+            href="./assets/docs/cv.pdf"
+            target="_blank"
+            class="boton boton_oscuro"
             >Descargar CV</a
           >
         </div>
       </section>
-      <article class="article about_me" id="about-me">
-        <div class="article__content">
-          <h2 class="article__title">Un poco sobre mi</h2>
-          <section class="section_description">
-            <div class="section_description__porta_retrato">
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <div class="articulo__contenido">
+          <h2 class="articulo__titulo">Un poco sobre mi</h2>
+          <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
               <img
-                class="section_description__img"
+                class="seccion_descripcion__imagen"
                 src="./assets/images/profile/portada.jpg"
                 alt="imagen sobre mi"
               />
             </div>
             <div
-              class="section_description__info scroll scroll_thin scroll_thin_grey"
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
             >
-              <h3 class="section_description__title">Mi historia</h3>
-              <p class="section_description__paragraph">
+              <h3 class="seccion_descripcion__titulo">Mi historia</h3>
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="section_description__paragraph">
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="section_description__paragraph">
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="section_description__paragraph">
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
@@ -96,18 +99,18 @@
               </p>
             </div>
           </section>
-          <section class="section_description">
+          <section class="seccion_descripcion">
             <div
-              class="section_description__info scroll scroll_thin scroll_thin_grey"
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
             >
-              <h3 class="section_description__title">Mis hobbies</h3>
-              <p class="section_description__paragraph">
+              <h3 class="seccion_descripcion__titulo">Mis hobbies</h3>
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="section_description__paragraph">
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
@@ -121,16 +124,16 @@
                 labore excepturi quos repellat non, officiis, ea vero commodi
                 reiciendis.
               </p>
-              <p class="section_description__paragraph">
+              <p class="seccion_descripcion__parrafo">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
             </div>
-            <div class="section_description__porta_retrato">
+            <div class="seccion_descripcion__porta_retrato">
               <img
-                class="section_description__img section_description__img_variante"
+                class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
                 src="./assets/images/profile/portada.jpg"
                 alt="imagen sobre mi"
               />
@@ -138,141 +141,151 @@
           </section>
         </div>
       </article>
-      <article class="article projects" id="projects">
-        <div class="article__content">
-          <h2 class="article__title">Mis proyectos</h2>
-          <div class="container_cards_grid">
-            <div class="card">
+      <article class="articulo proyectos" id="proyectos">
+        <div class="articulo__contenido">
+          <h2 class="articulo__titulo">Mis proyectos</h2>
+          <div class="contenedor_tarjetas_grid">
+            <div class="tarjeta">
               <img
-                class="card__img"
+                class="tarjeta__imagen"
                 src="./assets/images/proyectos/paisaje.jpg"
                 alt="imagen del proyecto"
               />
-              <div class="card__content">
-                <h3 class="card__title">titulo</h3>
-                <span class="card__divisor"></span>
-                <p class="card__paragraph scroll scroll_thin">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo">titulo</h3>
+                <span class="tarjeta__divisor"></span>
+                <p class="tarjeta__parrafo scroll scroll_fino">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Inventore necessitatibus doloribus adipisci dolorum cum et
                   quisquam dicta veniam accusamus dignissimos. Placeat eligendi
                   nihil voluptates eos enim aperiam porro architecto et?
                 </p>
-                <a href="#" class="button button_dark" target="_blank"
+                <a href="#" class="boton boton_oscuro" target="_blank"
                   >Ver proyecto</a
                 >
               </div>
             </div>
-            <div class="card">
+            <div class="tarjeta">
               <img
-                class="card__img"
+                class="tarjeta__imagen"
                 src="./assets/images/proyectos/juegos.jpg"
                 alt="imagen del proyecto"
               />
-              <div class="card__content">
-                <h3 class="card__title">titulo</h3>
-                <span class="card__divisor"></span>
-                <p class="card__paragraph scroll scroll_thin scroll_thin_grey">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo">titulo</h3>
+                <span class="tarjeta__divisor"></span>
+                <p class="tarjeta__parrafo scroll scroll_fino scroll_gris">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Inventore necessitatibus doloribus adipisci dolorum cum et
                   quisquam dicta veniam accusamus dignissimos. Placeat eligendi
                   nihil voluptates eos enim aperiam porro architecto et?
                 </p>
-                <a href="#" class="button button_dark" target="_blank"
-                  >Ver proyecto</a
-                >
+                <a href="#" class="boton" target="_blank">Ver proyecto</a>
               </div>
             </div>
-            <div class="card">
+            <div class="tarjeta">
               <img
-                class="card__img"
+                class="tarjeta__imagen"
                 src="./assets/images/proyectos/calendario.jpg"
                 alt="imagen del proyecto"
               />
-              <div class="card__content">
-                <h3 class="card__title">titulo</h3>
-                <span class="card__divisor"></span>
-                <p class="card__paragraph scroll scroll_thin">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo">titulo</h3>
+                <span class="tarjeta__divisor"></span>
+                <p class="tarjeta__parrafo scroll scroll_fino">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Inventore necessitatibus doloribus adipisci dolorum cum et
                   quisquam dicta veniam accusamus dignissimos. Placeat eligendi
                   nihil voluptates eos enim aperiam porro architecto et?
                 </p>
-                <a href="#" class="button button_dark" target="_blank"
+                <a href="#" class="boton boton_oscuro" target="_blank"
                   >Ver proyecto</a
                 >
               </div>
             </div>
-            <div class="card">
+            <div class="tarjeta">
               <img
-                class="card__img"
+                class="tarjeta__imagen"
                 src="./assets/images/proyectos/clima.jpg"
                 alt="imagen del proyecto"
               />
-              <div class="card__content">
-                <h3 class="card__title">titulo</h3>
-                <span class="card__divisor"></span>
-                <p class="card__paragraph scroll scroll_thin scroll_thin_grey">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo">titulo</h3>
+                <span class="tarjeta__divisor"></span>
+                <p class="tarjeta__parrafo scroll scroll_fino scroll_gris">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Inventore necessitatibus doloribus adipisci dolorum cum et
                   quisquam dicta veniam accusamus dignissimos. Placeat eligendi
                   nihil voluptates eos enim aperiam porro architecto et?
                 </p>
-                <a href="#" class="button" target="_blank">Ver proyecto</a>
+                <a href="#" class="boton" target="_blank">Ver proyecto</a>
               </div>
             </div>
-            <div class="card">
+            <div class="tarjeta">
               <img
-                class="card__img"
+                class="tarjeta__imagen"
                 src="./assets/images/proyectos/calculadora.jpg"
                 alt="imagen del proyecto"
               />
-              <div class="card__content">
-                <h3 class="card__title">titulo</h3>
-                <span class="card__divisor"></span>
-                <p class="card__paragraph scroll scroll_thin">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo">titulo</h3>
+                <span class="tarjeta__divisor"></span>
+                <p class="tarjeta__parrafo scroll scroll_fino">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Inventore necessitatibus doloribus adipisci dolorum cum et
                   quisquam dicta veniam accusamus dignissimos. Placeat eligendi
                   nihil voluptates eos enim aperiam porro architecto et?
                 </p>
-                <a href="#" class="button button_dark" target="_blank"
+                <a href="#" class="boton boton_oscuro" target="_blank"
                   >Ver proyecto</a
                 >
               </div>
             </div>
-            <div class="card">
+            <div class="tarjeta">
               <img
-                class="card__img"
+                class="tarjeta__imagen"
                 src="./assets/images/proyectos/reproductor.jpg"
                 alt="imagen del proyecto"
               />
-              <div class="card__content">
-                <h3 class="card__title">titulo</h3>
-                <span class="card__divisor"></span>
-                <p class="card__paragraph scroll scroll_thin scroll_thin_grey">
+              <div class="tarjeta__contenido">
+                <h3 class="tarjeta__titulo">titulo</h3>
+                <span class="tarjeta__divisor"></span>
+                <p class="tarjeta__parrafo scroll scroll_fino scroll_gris">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Inventore necessitatibus doloribus adipisci dolorum cum et
                   quisquam dicta veniam accusamus dignissimos. Placeat eligendi
                   nihil voluptates eos enim aperiam porro architecto et?
                 </p>
-                <a href="#" class="button" target="_blank">Ver proyecto</a>
+                <a href="#" class="boton" target="_blank">Ver proyecto</a>
               </div>
             </div>
           </div>
         </div>
       </article>
     </main>
-    <footer class="footer">
-      <h4 class="footer__title">CONTACTAME</h4>
-      <ul class="anchors">
-        <li class="anchors__li">
-          <a class="anchors__a" href="#" target="_blank">github</a>
+    <footer class="pie_de_pagina">
+      <h4 class="pie_de_pagina__titulo">CONTACTAME</h4>
+      <ul class="enlaces">
+        <li class="enlaces__item">
+          <a
+            class="enlaces__enlace"
+            href="https://github.com/RamaAlves"
+            target="_blank"
+            >github</a
+          >
         </li>
-        <li class="anchors__li">
-          <a class="anchors__a" href="#" target="_blank">e-mail</a>
+        <li class="enlaces__item">
+          <a class="enlaces__enlace" href="mailto:mail@mail.com" target="_blank"
+            >e-mail</a
+          >
         </li>
-        <li class="anchors__li">
-          <a class="anchors__a" href="#" target="_blank">twitter</a>
+        <li class="enlaces__item">
+          <a
+            class="enlaces__enlace"
+            href="https://twitter.com/1394Alves"
+            target="_blank"
+            >X</a
+          >
         </li>
       </ul>
     </footer>
