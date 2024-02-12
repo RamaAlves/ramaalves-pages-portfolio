@@ -155,23 +155,21 @@ body {
   flex-shrink: 0;
   height: 300px;
   width: 300px;
-  flex-basis: 300px;
-  padding: 10px;
-  background-color: var(--texto-primario);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.seccion_descripcion__porta_retrato:hover {
   background-color: transparent;
+  cursor: pointer;
 }
+
 .seccion_descripcion__imagen {
   position: absolute;
-  width: 280px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  padding-bottom: 50px;
+  background-color: var(--texto-primario);
   object-fit: cover;
   transition: left 0.6s ease, right 0.6s ease, top 0.6s ease, bottom 0.6s ease,
     width 0.6s ease, height 0.6s ease, padding 0.6s ease,
-    background-color 0.6s ease, transform 0.3s ease,
+    background-color 0.6s ease, transform 0.6s ease,
     border-radius 0.3s 0.3s ease;
   top: 30px;
   left: 30px;
@@ -180,7 +178,7 @@ body {
   right: 30px;
   left: auto;
 }
-.seccion_descripcion__porta_retrato:hover > .seccion_descripcion__imagen {
+.seccion_descripcion__imagen:hover {
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -189,8 +187,7 @@ body {
   top: 0;
   border-radius: 20px;
 }
-.seccion_descripcion__porta_retrato:hover
-  > .seccion_descripcion__imagen_variante {
+.seccion_descripcion__imagen_variante:hover {
   left: auto;
   right: 0;
 }
@@ -389,11 +386,11 @@ body {
     padding: 40px;
   }
   .seccion_descripcion__imagen {
-    left: 50px;
-    top: 50px;
+    left: 40px;
+    top: 40px;
   }
   .seccion_descripcion__imagen_variante {
-    right: 50px;
+    right: 40px;
     left: auto;
   }
   .tarjeta__contenido .boton {
@@ -428,7 +425,7 @@ body {
   }
   .seccion_descripcion__imagen_variante {
     top: auto;
-    bottom: 90px;
+    bottom: 40px;
   }
   .seccion_descripcion__porta_retrato:hover > .seccion_descripcion__imagen {
     transform: translateX(0);
@@ -487,11 +484,11 @@ body {
     padding: 10px;
   }
   .seccion_descripcion__imagen {
-    top: 30px;
+    top: 20px;
   }
   .seccion_descripcion__imagen_variante {
     top: auto;
-    bottom: 70px;
+    bottom: 20px;
   }
   .contenedor_tarjetas_grid {
     grid-template-columns: 1fr;
