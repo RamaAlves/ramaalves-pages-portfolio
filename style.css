@@ -235,7 +235,12 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   background-color: var(--fondo-primario);
-  filter: drop-shadow(0px 0px 2px var(--texto-primario));
+  background: linear-gradient(
+    180deg,
+    var(--fondo-primario) 0%,
+    var(--fondo-secundario) 100%
+  );
+  border-top: 1px solid var(--texto-secundario);
 }
 .pie_de_pagina__columna {
   flex-basis: 300px;
