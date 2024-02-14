@@ -38,11 +38,12 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </p>
         <div class="presentacion__contenedor_botones">
-          <a href="#sobre-mi" class="boton">Sobre mí</a>
+          <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
           <a
             href="./assets/docs/cv.pdf"
             target="_blank"
             class="boton boton_oscuro"
+            role="button"
             >Descargar CV</a
           >
         </div>
@@ -54,33 +55,53 @@
             <div class="seccion_descripcion__porta_retrato">
               <img
                 class="seccion_descripcion__imagen"
-                src="./assets/images/profile/portada.jpg"
-                alt="imagen sobre mi"
+                src="./assets/images/profile/trabajo2.jpg"
+                alt="foto trabajando en la oficina"
+                title="trabajando en la oficina"
               />
             </div>
             <div
               class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion_personal"
             >
-              <h3 class="seccion_descripcion__titulo">Mi historia</h3>
-              <p class="seccion_descripcion__parrafo">
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-labelledby="mi_historia_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="seccion_descripcion__parrafo">
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-labelledby="mi_historia_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="seccion_descripcion__parrafo">
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-labelledby="mi_historia_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="seccion_descripcion__parrafo">
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-labelledby="mi_historia_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
@@ -102,15 +123,26 @@
           <section class="seccion_descripcion">
             <div
               class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion_personal"
             >
-              <h3 class="seccion_descripcion__titulo">Mis hobbies</h3>
-              <p class="seccion_descripcion__parrafo">
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-labelledby="mis_hobbies_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
                 repellat non, officiis, ea vero commodi reiciendis.
               </p>
-              <p class="seccion_descripcion__parrafo">
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-labelledby="mis_hobbies_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
@@ -124,7 +156,11 @@
                 labore excepturi quos repellat non, officiis, ea vero commodi
                 reiciendis.
               </p>
-              <p class="seccion_descripcion__parrafo">
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-labelledby="mis_hobbies_titulo"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Molestiae dolorem quasi atque deserunt odio, minima saepe
                 delectus nemo praesentium sapiente labore excepturi quos
@@ -134,8 +170,9 @@
             <div class="seccion_descripcion__porta_retrato">
               <img
                 class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
-                src="./assets/images/profile/portada.jpg"
-                alt="imagen sobre mi"
+                src="./assets/images/profile/trabajo3.jpg"
+                alt="foto mientras me encontraba en una reunion de trabajo"
+                title="selfie en una reunion"
               />
             </div>
           </section>
@@ -144,16 +181,20 @@
       <article class="articulo proyectos" id="proyectos">
         <h2 class="articulo__titulo">Mis proyectos</h2>
         <div class="contenedor_tarjetas_grid">
-          <div class="tarjeta">
+          <div class="tarjeta" aria-label="presentacion de proyecto personal">
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/paisaje.jpg"
               alt="imagen del proyecto"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">titulo</h3>
               <span class="tarjeta__divisor"></span>
-              <p class="tarjeta__parrafo scroll scroll_fino">
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-labelledby="titulo_proyecto_1"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Inventore necessitatibus doloribus adipisci dolorum cum et
                 quisquam dicta veniam accusamus dignissimos. Placeat eligendi
@@ -164,16 +205,20 @@
               >
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta" aria-label="presentacion de proyecto personal">
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/juegos.jpg"
               alt="imagen del proyecto"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">titulo</h3>
               <span class="tarjeta__divisor"></span>
-              <p class="tarjeta__parrafo scroll scroll_fino scroll_gris">
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-labelledby="titulo_proyecto_2"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Inventore necessitatibus doloribus adipisci dolorum cum et
                 quisquam dicta veniam accusamus dignissimos. Placeat eligendi
@@ -182,16 +227,20 @@
               <a href="#" class="boton" target="_blank">Ver proyecto</a>
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta" aria-label="presentacion de proyecto personal">
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/calendario.jpg"
               alt="imagen del proyecto"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">titulo</h3>
               <span class="tarjeta__divisor"></span>
-              <p class="tarjeta__parrafo scroll scroll_fino">
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-labelledby="titulo_proyecto_3"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Inventore necessitatibus doloribus adipisci dolorum cum et
                 quisquam dicta veniam accusamus dignissimos. Placeat eligendi
@@ -202,16 +251,20 @@
               >
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta" aria-label="presentacion de proyecto personal">
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/clima.jpg"
               alt="imagen del proyecto"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">titulo</h3>
               <span class="tarjeta__divisor"></span>
-              <p class="tarjeta__parrafo scroll scroll_fino scroll_gris">
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-labelledby="titulo_proyecto_4"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Inventore necessitatibus doloribus adipisci dolorum cum et
                 quisquam dicta veniam accusamus dignissimos. Placeat eligendi
@@ -220,16 +273,20 @@
               <a href="#" class="boton" target="_blank">Ver proyecto</a>
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta" aria-label="presentacion de proyecto personal">
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/calculadora.jpg"
               alt="imagen del proyecto"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">titulo</h3>
               <span class="tarjeta__divisor"></span>
-              <p class="tarjeta__parrafo scroll scroll_fino">
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-labelledby="titulo_proyecto_5"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Inventore necessitatibus doloribus adipisci dolorum cum et
                 quisquam dicta veniam accusamus dignissimos. Placeat eligendi
@@ -240,16 +297,20 @@
               >
             </div>
           </div>
-          <div class="tarjeta">
+          <div class="tarjeta" aria-label="presentacion de proyecto personal">
             <img
               class="tarjeta__imagen"
               src="./assets/images/proyectos/reproductor.jpg"
               alt="imagen del proyecto"
             />
             <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo">titulo</h3>
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">titulo</h3>
               <span class="tarjeta__divisor"></span>
-              <p class="tarjeta__parrafo scroll scroll_fino scroll_gris">
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-labelledby="titulo_proyecto_6"
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Inventore necessitatibus doloribus adipisci dolorum cum et
                 quisquam dicta veniam accusamus dignissimos. Placeat eligendi
@@ -261,7 +322,7 @@
         </div>
       </article>
     </main>
-    <footer class="pie_de_pagina">
+    <footer class="pie_de_pagina" role="contentinfo">
       <div class="pie_de_pagina__columna">
         <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
         <ul class="enlaces enlaces_redes">
@@ -315,7 +376,7 @@
           </li>
         </ul>
       </div>
-      <div class="pie_de_pagina__columna">
+      <div class="pie_de_pagina__columna" role="navigation">
         <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
         <ul class="enlaces enlaces_vertical">
           <li class="enlaces__item">

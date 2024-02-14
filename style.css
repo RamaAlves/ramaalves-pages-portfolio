@@ -437,7 +437,6 @@ body {
     height: max-content;
     justify-content: flex-start;
   }
-
   .tarjeta__contenido .boton {
     align-self: center;
   }
@@ -530,6 +529,9 @@ body {
   }
   .seccion_descripcion__imagen {
     top: 20px;
+  }
+  .seccion_descripcion__imagen:hover {
+    object-fit: contain;
   }
   .seccion_descripcion__imagen_variante {
     top: auto;
