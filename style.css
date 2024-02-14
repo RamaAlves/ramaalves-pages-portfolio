@@ -2,14 +2,14 @@
 :root {
   /* colors */
 
-  --texto-primario: #dddddd;
-  --texto-secundario: #d1d1d1;
-  --fondo-primario: #0f0921;
-  --fondo-primario-transparente: #0f092180;
-  --fondo-secundario: #0a0c13;
-  --color-primario: #2c2acb;
-  --color-primario-apagado: #2422a3;
-  --color-secundario: #9b70f9;
+  --texto-primario: #0a0c13;
+  --texto-secundario: #0f0921;
+  --fondo-primario: #d1d1d1;
+  --fondo-primario-transparente: #d1d1d180;
+  --fondo-secundario: #b8b8b8;
+  --color-primario: #2f8a9b;
+  --color-primario-apagado: #206775;
+  --color-secundario: #363636;
   --color-terciario: #6f6f6f;
 
   /* sizes */
@@ -57,13 +57,15 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: transparent;
+  background-color: var(--fondo-primario-transparente);
 }
 .navegacion__enlace {
   text-decoration: none;
 }
 .navegacion__titulo {
   font-size: var(--titulo-tamanio);
-  text-shadow: 2px 2px 2px var(--fondo-secundario);
+  color: var(--color-primario);
+  text-shadow: 2px 2px 2px var(--color-secundario);
 }
 
 /* principal */
@@ -75,7 +77,7 @@ body {
 .presentacion {
   width: 100%;
   height: 100vh;
-  background-image: url("./assets/images/profile/hero-tema-oscuro.jpg");
+  background-image: url("./assets/images/profile/hero-tema-claro.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -104,7 +106,7 @@ body {
 .presentacion__titulo {
   font-size: var(--presentacion-titulo-tamanio);
   color: var(--color-primario);
-  text-shadow: 2px 2px 2px var(--fondo-secundario);
+  text-shadow: 2px 2px 2px var(--color-secundario);
   animation: cambiar-color 8s linear infinite alternate;
 }
 
@@ -130,18 +132,16 @@ body {
 .sobre_mi {
   background: linear-gradient(
     180deg,
-    rgb(15 8 16) 0%,
-    var(--fondo-primario) 10%,
-    var(--color-primario-apagado) 75%,
-    var(--color-primario) 90%
+    #c1bfba 0%,
+    rgb(158 172 171) 30%,
+    var(--color-primario) 100%
   );
 }
 /* descomentar si se agregan estilos */
 .proyectos {
   background: linear-gradient(
     180deg,
-    var(--color-primario) 0%,
-    var(--color-primario-apagado) 10%,
+    var(--color-primario) 30%,
     var(--fondo-primario) 55%
   );
 }
@@ -151,7 +151,10 @@ body {
   flex-shrink: 0;
   text-align: center;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 2px var(--fondo-secundario);
+  text-shadow: 2px 2px 2px var(--color-secundario);
+}
+.proyectos .articulo__titulo {
+  color: var(--fondo-primario);
 }
 .articulo__contenedor_descripciones {
   display: flex;
@@ -183,7 +186,7 @@ body {
   height: 300px;
   padding: 10px;
   padding-bottom: 50px;
-  background-color: var(--texto-primario);
+  background-color: var(--fondo-primario);
   position: absolute;
   top: 40px;
   left: 50%;
@@ -203,7 +206,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 10px;
-  background-color: var(--texto-primario);
+  background-color: var(--fondo-primario);
   left: 0;
   top: 0;
   border-radius: 20px;
@@ -249,7 +252,7 @@ body {
   background: linear-gradient(
     180deg,
     var(--fondo-primario) 0%,
-    var(--fondo-secundario) 100%
+    var(--fondo-secundario) 60%
   );
   border-top: 1px solid var(--texto-secundario);
 }
@@ -308,10 +311,11 @@ body {
 .enlaces__icono {
   width: 40px;
   aspect-ratio: 1;
-  filter: drop-shadow(0px 0px 2px var(--texto-primario));
+  filter: drop-shadow(0px 0px 2px var(--color-secundario));
+  transition: filter 0.3s ease;
 }
 .enlaces__icono:hover {
-  filter: drop-shadow(0px 0px 4px var(--texto-primario));
+  filter: drop-shadow(0px 0px 4px var(--color-primario));
 }
 .enlaces__enlace:hover,
 .enlaces__enlace:focus {
@@ -327,20 +331,19 @@ body {
   font-weight: var(--texto-peso-grueso);
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: var(--texto-primario);
-  color: var(--fondo-primario);
   border-radius: 4px;
-}
-.boton:hover {
-  color: var(--texto-primario);
-  background-color: var(--color-primario-apagado);
-}
-.boton_oscuro {
   color: var(--texto-primario);
   background-color: var(--color-primario);
 }
+.boton:hover {
+  color: var(--fondo-primario);
+  background-color: var(--color-primario-apagado);
+}
+.boton_oscuro {
+  color: var(--fondo-primario);
+  background-color: var(--texto-primario);
+}
 .boton_oscuro:hover {
-  color: var(--texto-primario);
   background-color: var(--color-primario-apagado);
 }
 
@@ -430,16 +433,25 @@ body {
 
 @keyframes cambiar-color {
   0% {
-    color: var(--texto-primario);
-    filter: drop-shadow(0 0 6px var(--fondo-primario));
+    color: var(--color-primario);
+    filter: drop-shadow(0 0 6px var(--fondo-secundario));
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-25px);
   }
   50% {
-    color: var(--color-primario);
+    color: var(--color-primario-apagado);
     filter: none;
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(-30px);
   }
   100% {
-    filter: drop-shadow(0 0 6px var(--color-primario));
-    color: var(--color-secundario);
+    color: var(--color-primario);
+    filter: drop-shadow(0 0 6px var(--color-primario-apagado));
+    transform: translateY(-5px);
   }
 }
 
@@ -507,7 +519,6 @@ body {
     height: 120px;
     display: flex;
     flex-direction: column;
-    background-color: var(--fondo-primario-transparente);
   }
   .enlaces {
     width: 80%;
